@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 [box-shadow:0_4px_62px_0px_#FAC4D2A1]">
-      <nav className="max-w-310.25 mx-auto px-6 flex items-center justify-between h-[89px]">
+      <nav className="max-w-310.25 mx-auto px-6 flex items-center justify-between h-22.25">
         {/* Logo */}
         <Link href="/" aria-label="OneLittleWeb Home">
           <AppImage
@@ -19,6 +19,7 @@ export default function Navbar() {
             alt="listings"
             width={125}
             height={45}
+            priority
           />
         </Link>
 
@@ -28,12 +29,12 @@ export default function Navbar() {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="group relative text-[18px] leading-[150%] font-normal hover:font-bold text-[#1E1E1E] hover:text-[#ED3C6A] transition-colors duration-200
-          after:content-[attr(data-text)] after:block after:font-bold after:h-0 after:overflow-hidden after:invisible"
-                data-text={link.label}
+                className="group relative text-[18px] leading-[150%] font-normal hover:font-bold text-[#1E1E1E] hover:text-[#ED3C6A] transition-colors duration-200"
               >
-                {link.label}
-                <span className="absolute left-0 -bottom-[7px] w-full h-px bg-[#ED3C6A] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                <span className="relative">
+                  {link.label}
+                  <span className="absolute left-0 -bottom-1.75 w-full h-px bg-[#ED3C6A] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                </span>
               </Link>
             </li>
           ))}
