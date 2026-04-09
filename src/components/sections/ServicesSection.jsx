@@ -18,7 +18,7 @@ export default function ServicesSection() {
           {SERVICES.map((service) => (
             <article
               key={service.title}
-              className="border border-[#FAC4D2] rounded-[13px] pt-[53px] pl-[34px] pr-[58px] pb-[30px] hover:shadow-md transition-shadow duration-200"
+              className="border border-[#FAC4D2] rounded-[13px] pt-13.25 pl-8.5 pr-14.5 pb-7.5 hover:shadow-md transition-shadow duration-200"
             >
               <div className="mb-5">
                 <AppImage
