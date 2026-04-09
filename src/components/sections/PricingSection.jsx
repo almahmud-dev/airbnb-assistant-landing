@@ -35,8 +35,8 @@ export default function PricingSection() {
             }`}
           >
             <span
-              className={`absolute top-[3px] w-4.5 h-4.5 bg-white rounded-full shadow transition-transform duration-300 ${
-                isYearly ? "translate-x-[23px]" : "translate-x-[3px]"
+              className={`absolute left-0 top-0.75 w-4.5 h-4.5 bg-white rounded-full shadow transition-transform duration-300 ${
+                isYearly ? "translate-x-5.75" : "translate-x-0.75"
               }`}
             />
           </button>
@@ -63,24 +63,24 @@ export default function PricingSection() {
           </div>
         </div>
 
-        {/* ── Plans ── */}
+        {/* Plans */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {PRICING_PLANS.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-2xl p-8 ${
+              className={`rounded-[10px] px-6 py-10 ${
                 plan.featured
                   ? "bg-[#ED3C6A]"
-                  : "border border-gray-200 bg-white"
+                  : "border border-[#FAC4D2] bg-white"
               }`}
             >
               <h3
-                className={`text-xl font-bold mb-2 ${plan.featured ? "text-white" : "text-gray-900"}`}
+                className={`text-[22px] font-bold font-manrope mb-2.75 ${plan.featured ? "text-white" : "text-gray-900"}`}
               >
                 {plan.name}
               </h3>
               <p
-                className={`text-sm mb-6 leading-relaxed ${plan.featured ? "text-pink-100" : "text-gray-500"}`}
+                className={`text-sm mb-6 font-manrope min-h-11 ${plan.featured ? "text-pink-100" : "text-gray-500"}`}
               >
                 {plan.description}
               </p>
@@ -88,12 +88,12 @@ export default function PricingSection() {
               {/* Price */}
               <div className="mb-6">
                 <span
-                  className={`text-5xl font-extrabold ${plan.featured ? "text-white" : "text-gray-900"}`}
+                  className={`text-[56px] font-semibold ${plan.featured ? "text-white" : "text-gray-900"}`}
                 >
                   ${isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                 </span>
                 <span
-                  className={`text-sm ml-1 ${plan.featured ? "text-pink-100" : "text-gray-500"}`}
+                  className={`text-[16px] font-light ml-1 ${plan.featured ? "text-pink-100" : "text-gray-500"}`}
                 >
                   / Month
                 </span>
@@ -101,9 +101,9 @@ export default function PricingSection() {
 
               {/* CTA */}
               <button
-                className={`w-full py-3 rounded-lg font-semibold text-sm mb-8 transition-colors duration-200 ${
+                className={`w-full py-3 rounded-lg font-semibold text-[16px] mb-8 transition-colors duration-200 font-manrope ${
                   plan.featured
-                    ? "bg-white text-[#F72585] hover:bg-pink-50"
+                    ? "bg-white text-[#ED3C6A] hover:bg-pink-50"
                     : "border border-[#F72585] text-[#F72585] hover:bg-[#F72585] hover:text-white"
                 }`}
               >
@@ -115,41 +115,36 @@ export default function PricingSection() {
                 {plan.features.map((feature) => (
                   <li key={feature.text} className="flex items-center gap-3">
                     <span
-                      className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${
+                      className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-manrope ${
                         feature.included
                           ? plan.featured
-                            ? "bg-white"
-                            : "bg-[#F72585]"
+                            ? "bg-[#FAC4D2]"
+                            : "bg-[#FAC4D2]"
                           : plan.featured
-                            ? "bg-pink-400"
-                            : "bg-gray-200"
+                            ? "bg-white"
+                            : "bg-[#F7F8F9]"
                       }`}
                     >
                       {feature.included ? (
                         <Check
-                          size={11}
+                          size={16}
                           className={
-                            plan.featured ? "text-[#F72585]" : "text-white"
+                            plan.featured ? "text-[#F72585]" : "text-[#F72585]"
                           }
                         />
                       ) : (
-                        <X
-                          size={11}
-                          className={
-                            plan.featured ? "text-white" : "text-gray-400"
-                          }
-                        />
+                        <X size={16} className={"text-black"} />
                       )}
                     </span>
                     <span
-                      className={`text-sm ${
+                      className={`text-[16px] font-medium font-manrope ${
                         feature.included
                           ? plan.featured
                             ? "text-white"
-                            : "text-gray-800"
+                            : "text-[#191D23]"
                           : plan.featured
-                            ? "text-pink-200"
-                            : "text-gray-400"
+                            ? "text-white"
+                            : "text-[#C4C4C4]"
                       }`}
                     >
                       {feature.text}
