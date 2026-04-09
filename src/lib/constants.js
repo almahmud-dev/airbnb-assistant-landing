@@ -9,32 +9,32 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
   {
-    icon: "/images/icon-listings.png",
+    icon: "/images/Service/service1.png",
     title: "Manage Property Listings",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    icon: "/images/icon-bookings.png",
+    icon: "/images/Service/service2.png",
     title: "Manage Customer Bookings",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    icon: "/images/icon-cleaning.png",
+    icon: "/images/Service/service3.png",
     title: "Schedule House Cleaning",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    icon: "/images/icon-listings.png",
+    icon: "/images/Service/service4.png",
     title: "Monitor Guest Reviews",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    icon: "/images/icon-bookings.png",
+    icon: "/images/Service/service5.png",
     title: "Track & Report Expenses",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    icon: "/images/icon-cleaning.png",
+    icon: "/images/Service/service6.png",
     title: "Guest Inquiry & Support",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },

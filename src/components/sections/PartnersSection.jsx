@@ -14,20 +14,21 @@ const doubled = [...LOGOS, ...LOGOS];
 
 export default function PartnersSection() {
   return (
-    <section className="pt-[50px] pb-[55px] border-y border-gray-100 overflow-hidden">
+    <section className="pt-12.5 pb-13.75 border-y border-gray-100 overflow-hidden">
       <p className="text-center text-[#000000] font-semibold leading-[100%] text-[20px] mb-6">
         Trusted by leaders in 50+ industries
       </p>
 
-      <div className="relative overflow-hidden bg-[#F6F6F6] py-[18px]">
+      <div className="relative overflow-hidden bg-[#F6F6F6] py-4.5">
         <div className="flex animate-marquee gap-16 items-center w-max">
           {doubled.map((logo, i) => (
-            <div key={`${logo.name}-${i}`} className="flex items-center justify-center min-w-[120px]">
+            <div key={`${logo.name}-${i}`} className="flex items-center justify-center min-w-30">
               <NextImage
                 src={logo.src}
                 alt={logo.name}
                 width={120}
                 height={40}
+                style={{ height: "auto" }}
                 className="object-contain"
               />
             </div>

@@ -1,6 +1,17 @@
 import NextImage from "next/image";
 
-export default function AppImage({ src, alt, width = 48, height = 48, className = "", fill, priority }) {
+export default function AppImage({
+  src,
+  alt,
+  width,
+  height,
+  className = "",
+  fill,
+  priority = false,
+  style,
+  sizes,
+  quality = 75,
+}) {
   if (fill) {
     return (
       <NextImage
@@ -9,6 +20,9 @@ export default function AppImage({ src, alt, width = 48, height = 48, className 
         fill
         className={className}
         priority={priority}
+        style={style}
+        sizes={sizes || "100vw"}
+        quality={quality}
       />
     );
   }
@@ -21,6 +35,9 @@ export default function AppImage({ src, alt, width = 48, height = 48, className 
       height={height}
       className={className}
       priority={priority}
+      style={{ height: "auto", ...style }}
+      sizes={sizes}
+      quality={quality}
     />
   );
 }
