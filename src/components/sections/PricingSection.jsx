@@ -50,7 +50,7 @@ export default function PricingSection() {
           {/* Save 25% — fixed position so it never pushes cards down */}
           <div
             className={`absolute left-[calc(60%+30px)] -top-6.5 transition-opacity duration-300 ${
-              isYearly ? "opacity-100" : "opacity-0 pointer-events-none"
+              isYearly ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >
             <AppImage
