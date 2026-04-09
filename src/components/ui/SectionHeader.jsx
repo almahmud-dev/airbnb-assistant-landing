@@ -1,11 +1,11 @@
 export default function SectionHeader({ title, highlight, description }) {
   return (
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">
-        {title} <span className="text-[#F72585]">{highlight}</span>
+    <div className="text-center mb-13.5">
+      <h2 className="text-[32px] font-bold text-[#000000] mb-3.5">
+        {title} <span className="text-[#ED3C6A]">{highlight}</span>
       </h2>
       {description && (
-        <p className="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto">
+        <p className="text-[#000000] text-sm leading-relaxed max-w-184.5 mx-auto">
           {description}
         </p>
       )}

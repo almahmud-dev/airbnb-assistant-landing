@@ -6,8 +6,8 @@ import { SERVICES } from "@/lib/constants";
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-[1200px] mx-auto px-6">
+    <section id="services" className="bg-white">
+      <div className="max-w-310 mx-auto px-6">
         <SectionHeader
           title="Our"
           highlight="Service"
@@ -18,7 +18,7 @@ export default function ServicesSection() {
           {SERVICES.map((service) => (
             <article
               key={service.title}
-              className="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow duration-200"
+              className="border border-[#FAC4D2] rounded-[13px] pt-[53px] pl-[34px] pr-[58px] pb-[30px] hover:shadow-md transition-shadow duration-200"
             >
               <div className="mb-5">
                 <AppImage
@@ -30,11 +30,11 @@ export default function ServicesSection() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">{service.description}</p>
+              <h3 className="text-[24px] font-bold leading-[150%] text-[#000000] mb-3.5">{service.title}</h3>
+              <p className="text-[#000000] text-sm font-medium mb-8.75">{service.description}</p>
               <Link
                 href="#"
-                className="inline-block border border-[#F72585] text-[#F72585] text-sm font-medium px-5 py-2 rounded-full hover:bg-[#F72585] hover:text-white transition-colors duration-200"
+                className="inline-block border border-[#ED3C6A] text-[#F72585] text-sm font-medium px-6 py-2.5 rounded-full hover:bg-[#F72585] hover:text-white transition-colors duration-200"
               >
                 Read More
               </Link>
