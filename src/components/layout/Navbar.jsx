@@ -65,18 +65,18 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="text-sm font-medium text-gray-700 hover:text-[#F72585] transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-[#ED3C6A] transition-colors"
             >
               {link.label}
             </Link>
           ))}
-          <Link
+          <Button
             href="#contact"
+            showArrow
             onClick={() => setMobileOpen(false)}
-            className="flex items-center gap-2 bg-[#F72585] text-white text-sm font-semibold px-5 py-3 rounded-lg w-fit"
           >
-            Schedule A Meeting <ArrowRight size={15} />
-          </Link>
+            Schedule A Meeting
+          </Button>
         </div>
       )}
     </header>

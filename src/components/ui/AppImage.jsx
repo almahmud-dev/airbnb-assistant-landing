@@ -6,7 +6,7 @@ export default function AppImage({
   width,
   height,
   className = "",
-  fill,
+  fill = false,
   priority = false,
   style,
   sizes,
@@ -16,12 +16,12 @@ export default function AppImage({
     return (
       <NextImage
         src={src}
-        alt={alt}
+        alt={alt ?? "image"}
         fill
         className={className}
         priority={priority}
-        style={style}
-        sizes={sizes || "100vw"}
+        style={{ objectFit: "cover", ...style }}
+        sizes={sizes ?? "100vw"}
         quality={quality}
       />
     );
@@ -30,9 +30,9 @@ export default function AppImage({
   return (
     <NextImage
       src={src}
-      alt={alt}
-      width={width}
-      height={height}
+      alt={alt ?? "image"}
+      width={width ?? 800}
+      height={height ?? 600}
       className={className}
       priority={priority}
       style={{ height: "auto", ...style }}

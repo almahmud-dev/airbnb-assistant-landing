@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import AppImage from "@/components/ui/AppImage";
+import Button from "../ui/Button";
 
 function FloatingIcon({ rotate, className, children }) {
   return (
@@ -107,15 +108,15 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col items-center gap-5">
-          <Link
+          <Button
             href="#contact"
             className="inline-flex items-center gap-2 bg-[#ED3C6A] hover:bg-[#d4006e] text-white text-[14px] font-bold leading-[100%] pl-5.5 pr-5 py-4.5 rounded-[5px] transition-colors"
           >
             Schedule A Meeting <ArrowRight size={10} />
-          </Link>
+          </Button>
           <Link
             href="#pricing"
-            className="text-sm text-[##000000] underline font-medium underline-offset-2 hover:text-[#ED3C6A] transition-colors"
+            className="text-sm text-[#000000] underline font-medium underline-offset-2 hover:text-[#ED3C6A] transition-colors"
           >
             See Pricing
           </Link>

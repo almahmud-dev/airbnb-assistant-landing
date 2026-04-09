@@ -8,6 +8,8 @@ export default function Button({
   children,
   className = "",
   showArrow = false,
+  type = "button",
+  disabled = false,
 }) {
   const base =
     "inline-flex items-center gap-2 text-[14px] font-bold leading-[100%] py-[18px] pl-[22px] pr-[20.5px] rounded-[5px] transition-colors duration-200 cursor-pointer";
