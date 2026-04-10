@@ -7,6 +7,48 @@ export const NAV_LINKS = [
   { label: "Blog", href: "#blog" },
   { label: "Resources", href: "#resources" },
 ];
+// Hero Section
+export const HERO_DESIGN_WIDTH = 1440;
+export const HERO_DESIGN_HEIGHT = 584;
+
+export const HERO_FLOATING_IMAGES = [
+  {
+    src: "/images/Herro/image1.png",
+    alt: "Airbnb",
+    width: "7%",
+    left: "18%",
+    top: "32%",
+    rotate: "-4.84deg",
+    animationClass: "animate-hero-float-1",
+  },
+  {
+    src: "/images/Herro/image3.png",
+    alt: "Booking",
+    width: "4.5%",
+    left: "74.5%",
+    top: "35%",
+    rotate: "27.61deg",
+    animationClass: "animate-hero-float-2",
+  },
+  {
+    src: "/images/Herro/image2.png",
+    alt: "App 2",
+    width: "5.2%",
+    left: "21%",
+    top: "75%",
+    rotate: "0deg",
+    animationClass: "animate-hero-float-3",
+  },
+  {
+    src: "/images/Herro/image4.png",
+    alt: "App 4",
+    width: "6.2%",
+    left: "70%",
+    top: "75%",
+    rotate: "-7.38deg",
+    animationClass: "animate-hero-float-4",
+  },
+];
 // ServicesSection -------->
 const DESC =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";

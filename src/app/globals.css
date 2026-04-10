@@ -12,6 +12,17 @@
     font-family: var(--font-manrope);
   }
 }
+/* Hero floating images */
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px) rotate(var(--rotate)); }
+  50%       { transform: translateY(-12px) rotate(var(--rotate)); }
+}
+
+.animate-hero-float { animation: heroFloat 3s ease-in-out infinite; }
+.animate-hero-float-1 { animation: heroFloat 3s ease-in-out infinite 0s; }
+.animate-hero-float-2 { animation: heroFloat 3s ease-in-out infinite 0.75s; }
+.animate-hero-float-3 { animation: heroFloat 3s ease-in-out infinite 1.5s; }
+.animate-hero-float-4 { animation: heroFloat 3s ease-in-out infinite 2.25s; }
 /*WhyChooseUsSection*/
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
