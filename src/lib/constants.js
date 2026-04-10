@@ -200,6 +200,19 @@ export const STEPS = [
   },
 ];
 
+// WhyChooseUsSection --------->
+export const WHY_CHOOSE_US = {
+  heading: "Few Reasons Why you\nChoose us?",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+  features: [
+    "Brilliant Client Service",
+    "Flexibility & Adaptibility",
+    "We make it Personal",
+    "We have expart in our team",
+  ],
+};
+
 // FAQSection --------->
 export const FAQS = [
   {
