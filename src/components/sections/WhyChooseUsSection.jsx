@@ -7,16 +7,16 @@ export default function WhyChooseUsSection() {
   const { heading, description, features } = WHY_CHOOSE_US;
 
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="max-w-[1240px] mx-auto px-6">
-        <div className="bg-[#FFF0F5] rounded-3xl pt-[66px] pb-[83px] pl-6 pr-6 md:pl-[89px] md:pr-[38px] flex flex-col md:flex-row items-center gap-3.5">
+    <section id="about" className="pt-10 lg:pt-21 pb-10 lg:pb-30.25 bg-white">
+      <div className="max-w-310 mx-auto px-5">
+        <div className="bg-[#FFF0F5] border border-[#F8BECD] rounded-3xl pt-10 lg:pt-16.5 pb-10 lg:pb-20.75 pl-6 pr-6 lg:pl-22.25 lg:pr-9.5 flex flex-col lg:flex-row items-center gap-3.5">
           {/* Left — Text */}
-          <div className="flex-1 w-full md:max-w-[457px]">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-[26px] whitespace-pre-line">
+          <div className="flex-1 w-full lg:max-w-114.25">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-6.5 whitespace-pre-line">
               {heading}
             </h2>
 
-            <p className="text-black text-sm font-semibold mb-[30px]">
+            <p className="text-black text-sm font-semibold mb-7.5">
               {description}
             </p>
 
@@ -39,12 +39,12 @@ export default function WhyChooseUsSection() {
           </div>
 
           {/* Right - Mockup */}
-          <div className="flex-1 relative flex items-center justify-center w-full md:max-w-[642px] mt-10 md:mt-0 h-[380px] sm:h-[420px] md:h-auto">
+          <div className="flex-1 relative flex items-center justify-center w-full lg:max-w-160.5 mt-10 lg:mt-0 h-95 sm:h-105 lg:h-auto">
             {/* Pink blob */}
-            <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[200px] sm:w-[420px] sm:h-[260px] md:w-[570px] md:h-[337px] bg-[#FAC4D2] rounded-[168.5px]" />
+            <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-50 sm:w-105 sm:h-65 lg:w-142.5 lg:h-84.25 bg-[#FAC4D2] rounded-[168.5px]" />
 
             {/* choose1 - Listing card */}
-            <div className="absolute top-0 -left-4 sm:top-6 sm:-left-6 md:top-10 md:-left-10 z-20 animate-float">
+            <div className="absolute top-0 -left-4 sm:top-6 sm:-left-6 lg:top-10 lg:-left-10 z-20 animate-float">
               <AppImage
                 src="/images/Why_Chosse/choose1.png"
                 alt="Listing card"
@@ -56,7 +56,7 @@ export default function WhyChooseUsSection() {
             </div>
 
             {/* choose2 — Brand icons */}
-            <div className="absolute top-0 right-0 sm:top-2 sm:right-4 md:top-3 md:right-7 z-20 animate-float-delay">
+            <div className="absolute top-0 right-0 sm:top-2 sm:right-4 lg:top-3 lg:right-7 z-20 animate-float-delay">
               <AppImage
                 src="/images/Why_Chosse/choose2.png"
                 alt="Platforms"
