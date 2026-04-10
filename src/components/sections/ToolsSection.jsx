@@ -25,9 +25,8 @@ export default function ToolsSection() {
                 <AppImage
                   src={tool.src}
                   alt={tool.name}
-                  width={120}
-                  height={40}
-                  style={{ height: "auto" }}
+                  width={tool.iconWidth}
+                  height={tool.iconHeight}
                   className="object-contain"
                 />
               </div>
