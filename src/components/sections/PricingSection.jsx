@@ -19,47 +19,54 @@ export default function PricingSection() {
         </p>
 
         {/* Billing Toggle */}
-        <div className="flex items-center justify-center gap-4 mb-12 relative">
-          <span
-            className={`text-[16px] font-normal transition-colors ${!isYearly ? "text-[#191D23]" : "text-gray-400"}`}
-          >
-            Pay Monthly
-          </span>
-
-          <button
-            role="switch"
-            aria-checked={isYearly}
-            onClick={() => setIsYearly(!isYearly)}
-            className={`relative w-11 h-6 rounded-full transition-colors duration-300 ${
-              isYearly ? "bg-[#F72585]" : "bg-gray-300"
-            }`}
-          >
+        <div className="flex flex-col items-center mb-12">
+          {/* Toggle Row + Save 25% */}
+          <div className="relative flex items-center gap-4">
             <span
-              className={`absolute left-0 top-0.75 w-4.5 h-4.5 bg-white rounded-full shadow transition-transform duration-300 ${
-                isYearly ? "translate-x-5.75" : "translate-x-0.75"
+              className={`text-[16px] font-normal transition-colors ${
+                !isYearly ? "text-[#191D23]" : "text-gray-400"
               }`}
-            />
-          </button>
+            >
+              Pay Monthly
+            </span>
 
-          <span
-            className={`text-[16px] font-normal transition-colors ${isYearly ? "text-[#191D23]" : "text-gray-400"}`}
-          >
-            Pay Yearly
-          </span>
+            <button
+              role="switch"
+              aria-checked={isYearly}
+              onClick={() => setIsYearly(!isYearly)}
+              className={`relative w-11 h-6 rounded-full transition-colors duration-300 ${
+                isYearly ? "bg-[#F72585]" : "bg-gray-300"
+              }`}
+            >
+              <span
+                className={`absolute left-0 top-0.75 w-4.5 h-4.5 bg-white rounded-full shadow transition-transform duration-300 ${
+                  isYearly ? "translate-x-5.75" : "translate-x-0.75"
+                }`}
+              />
+            </button>
 
-          {/* Save 25% — fixed position so it never pushes cards down */}
-          <div
-            className={`absolute left-[calc(60%+30px)] -top-6.5 transition-opacity duration-300 ${
-              isYearly ? "opacity-0 pointer-events-none" : "opacity-100"
-            }`}
-          >
-            <AppImage
-              src="/images/save13.png"
-              alt="Save 25%"
-              width={185}
-              height={88}
-              style={{ height: "auto" }}
-            />
+            <span
+              className={`text-[16px] font-normal transition-colors ${
+                isYearly ? "text-[#191D23]" : "text-gray-400"
+              }`}
+            >
+              Pay Yearly
+            </span>
+
+            {/* Save 25% — inline, no absolute, no calc() */}
+            <div
+              className={`hidden md:block transition-opacity duration-300 ${
+                isYearly ? "opacity-0 pointer-events-none" : "opacity-100"
+              }`}
+            >
+              <AppImage
+                src="/images/save13.png"
+                alt="Save 25%"
+                width={185}
+                height={88}
+                style={{ height: "auto" }}
+              />
+            </div>
           </div>
         </div>
 
@@ -75,12 +82,16 @@ export default function PricingSection() {
               }`}
             >
               <h3
-                className={`text-[22px] font-bold font-manrope mb-2.75 ${plan.featured ? "text-white" : "text-gray-900"}`}
+                className={`text-[22px] md:text-[18px] lg:text-[22px] font-bold font-manrope mb-2.75 ${
+                  plan.featured ? "text-white" : "text-gray-900"
+                }`}
               >
                 {plan.name}
               </h3>
               <p
-                className={`text-sm mb-6 font-manrope min-h-11 ${plan.featured ? "text-pink-100" : "text-gray-500"}`}
+                className={`text-sm md:text-[12px] lg:text-sm mb-6 font-manrope min-h-11 ${
+                  plan.featured ? "text-pink-100" : "text-gray-500"
+                }`}
               >
                 {plan.description}
               </p>
@@ -88,12 +99,16 @@ export default function PricingSection() {
               {/* Price */}
               <div className="mb-6">
                 <span
-                  className={`text-[56px] font-semibold ${plan.featured ? "text-white" : "text-gray-900"}`}
+                  className={`text-[56px] md:text-[40px] lg:text-[56px] font-semibold ${
+                    plan.featured ? "text-white" : "text-gray-900"
+                  }`}
                 >
                   ${isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                 </span>
                 <span
-                  className={`text-[16px] font-light ml-1 ${plan.featured ? "text-pink-100" : "text-gray-500"}`}
+                  className={`text-[16px] font-light ml-1 ${
+                    plan.featured ? "text-pink-100" : "text-gray-500"
+                  }`}
                 >
                   / Month
                 </span>
@@ -115,25 +130,18 @@ export default function PricingSection() {
                 {plan.features.map((feature) => (
                   <li key={feature.text} className="flex items-center gap-3">
                     <span
-                      className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-manrope ${
+                      className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
                         feature.included
-                          ? plan.featured
-                            ? "bg-[#FAC4D2]"
-                            : "bg-[#FAC4D2]"
+                          ? "bg-[#FAC4D2]"
                           : plan.featured
                             ? "bg-white"
                             : "bg-[#F7F8F9]"
                       }`}
                     >
                       {feature.included ? (
-                        <Check
-                          size={16}
-                          className={
-                            plan.featured ? "text-[#F72585]" : "text-[#F72585]"
-                          }
-                        />
+                        <Check size={16} className="text-[#F72585]" />
                       ) : (
-                        <X size={16} className={"text-black"} />
+                        <X size={16} className="text-black" />
                       )}
                     </span>
                     <span
