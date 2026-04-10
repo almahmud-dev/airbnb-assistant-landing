@@ -2,6 +2,7 @@ import { DM_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -49,9 +50,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${manrope.variable}`}>
       <body className={dmSans.className}>
+        <SmoothScroll>
         <Navbar />
         <main>{children}</main>
         <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
