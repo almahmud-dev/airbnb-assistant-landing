@@ -48,9 +48,9 @@ export default function WhyChooseUsSection() {
               <AppImage
                 src="/images/Why_Chosse/choose1.png"
                 alt="Listing card"
-                width={310}
-                height={130}
-                style={{ width: "clamp(180px, 45vw, 310px)", height: "auto" }}
+                width={254}
+                height={105}
+                style={{ width: "clamp(180px, 45vw, 254px)", height: "auto" }}
                 className="object-cover"
               />
             </div>
@@ -60,9 +60,9 @@ export default function WhyChooseUsSection() {
               <AppImage
                 src="/images/Why_Chosse/choose2.png"
                 alt="Platforms"
-                width={220}
-                height={184}
-                style={{ width: "clamp(130px, 30vw, 220px)", height: "auto" }}
+                width={159}
+                height={164}
+                style={{ width: "clamp(130px, 30vw, 159px)", height: "auto" }}
                 className="object-cover"
               />
             </div>
@@ -85,9 +85,9 @@ export default function WhyChooseUsSection() {
               <AppImage
                 src="/images/Why_Chosse/choose3.png"
                 alt="Calendar"
-                width={280}
-                height={200}
-                style={{ width: "clamp(160px, 38vw, 280px)", height: "auto" }}
+                width={211}
+                height={170}
+                style={{ width: "clamp(160px, 38vw, 211px)", height: "auto" }}
                 className="object-cover"
               />
             </div>

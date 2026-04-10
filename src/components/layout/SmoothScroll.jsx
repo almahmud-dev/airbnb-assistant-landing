@@ -57,7 +57,9 @@ export default function SmoothScroll({ children }) {
         navigator.maxTouchPoints > 0
       );
     }
-
+    function prefersReducedMotion() {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    }
     // Utility: live fps measure kora (~300ms sample)
     function measureFps() {
       return new Promise((resolve) => {
