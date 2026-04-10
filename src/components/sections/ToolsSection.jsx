@@ -1,17 +1,6 @@
 import AppImage from "@/components/ui/AppImage";
 import SectionHeader from "@/components/ui/SectionHeader";
-
-const TOOLS = [
-  { name: "PriceLabs",      src: "/images/Tools/tool1.png" },
-  { name: "Wheelhouse",     src: "/images/Tools/tool2.png" },
-  { name: "Beyond Pricing", src: "/images/Tools/tool3.png" },
-  { name: "Hostfully",      src: "/images/Tools/tool4.png" },
-  { name: "Guesty",         src: "/images/Tools/tool5.png" },
-  { name: "Lodgify",        src: "/images/Tools/tool6.png" },
-  { name: "Tool 7",         src: "/images/Tools/tool4.png" },
-  { name: "Tool 8",         src: "/images/Tools/tool5.png" },
-  { name: "Tool 9",         src: "/images/Tools/tool6.png" },
-];
+import { TOOLS } from "@/lib/constants";
 
 export default function ToolsSection() {
   return (
