@@ -38,6 +38,7 @@ export default function ToolsSection() {
                   alt={tool.name}
                   width={120}
                   height={40}
+                  style={{ height: "auto" }}
                   className="object-contain"
                 />
               </div>

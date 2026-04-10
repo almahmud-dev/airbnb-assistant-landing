@@ -45,6 +45,7 @@ export default function HeroSection() {
             alt="Icon 1"
             width={80}
             height={80}
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
       </FloatingIcon>
@@ -59,6 +60,7 @@ export default function HeroSection() {
             alt="Icon 2"
             width={68}
             height={68}
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
       </FloatingIcon>
@@ -73,6 +75,7 @@ export default function HeroSection() {
             alt="Icon 3"
             width={76}
             height={76}
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
       </FloatingIcon>
@@ -87,6 +90,7 @@ export default function HeroSection() {
             alt="Icon 4"
             width={72}
             height={72}
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
       </FloatingIcon>

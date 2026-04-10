@@ -44,6 +44,7 @@ export default function HowItWorksSection() {
                     alt={`Step ${step.num}`}
                     width={48}
                     height={48}
+                    style={{ height: "auto" }}
                     className="object-contain"
                   />
                 </div>
@@ -54,6 +55,7 @@ export default function HowItWorksSection() {
                   alt={step.label}
                   width={100}
                   height={100}
+                  style={{ height: "auto" }}
                   className="object-contain"
                 />
               </div>
