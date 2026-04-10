@@ -163,6 +163,34 @@ export const TOOLS = [
     iconHeight: 31,
   },
 ];
+// HowItWorksSection --------->
+export const STEPS = [
+  {
+    num: "01",
+    label: "Add requirements\n& sign up today",
+    topIcon: "/images/Work/work_top1.png",
+    icon: "/images/Work/work1.png",
+    iconWidth: 76,
+    iconHeight: 76,
+  },
+  {
+    num: "02",
+    label: "Connect with your CSM &\nonboarding team",
+    topIcon: "/images/Work/work_top2.png",
+    icon: "/images/Work/work2.png",
+    iconWidth: 76,
+    iconHeight: 76,
+  },
+  {
+    num: "03",
+    label: "Meet your STR\nAssistant next week",
+    topIcon: "/images/Work/work_top3.png",
+    icon: "/images/Work/work3.png",
+    iconWidth: 76,
+    iconHeight: 76,
+  },
+];
+
 // FAQSection --------->
 export const FAQS = [
   {

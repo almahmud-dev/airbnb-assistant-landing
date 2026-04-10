@@ -1,26 +1,6 @@
 import AppImage from "@/components/ui/AppImage";
 import SectionHeader from "@/components/ui/SectionHeader";
-
-const STEPS = [
-  {
-    num: "01",
-    label: "Add requirements\n& sign up today",
-    topIcon: "/images/Work/work_top1.png",
-    icon: "/images/Work/work1.png",
-  },
-  {
-    num: "02",
-    label: "Connect with your CSM &\nonboarding team",
-    topIcon: "/images/Work/work_top2.png",
-    icon: "/images/Work/work2.png",
-  },
-  {
-    num: "03",
-    label: "Meet your STR\nAssistant next week",
-    topIcon: "/images/Work/work_top3.png",
-    icon: "/images/Work/work3.png",
-  },
-];
+import { STEPS } from "@/lib/constants";
 
 export default function HowItWorksSection() {
   return (
@@ -42,9 +22,8 @@ export default function HowItWorksSection() {
                   <AppImage
                     src={step.topIcon}
                     alt={`Step ${step.num}`}
-                    width={48}
-                    height={48}
-                    style={{ height: "auto" }}
+                    width={step.iconWidth}
+                    height={step.iconHeight}
                     className="object-contain"
                   />
                 </div>
