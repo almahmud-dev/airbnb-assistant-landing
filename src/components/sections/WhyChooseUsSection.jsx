@@ -9,10 +9,10 @@ export default function WhyChooseUsSection() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-[1240px] mx-auto px-6">
-        <div className="bg-[#FFF0F5] rounded-3xl pt-[66px] pb-[83px] pl-[89px] pr-[38px] flex flex-col md:flex-row items-center gap-3.5">
+        <div className="bg-[#FFF0F5] rounded-3xl pt-[66px] pb-[83px] pl-6 pr-6 md:pl-[89px] md:pr-[38px] flex flex-col md:flex-row items-center gap-3.5">
           {/* Left — Text */}
-          <div className="flex-1 max-w-[457px]">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-[26px] whitespace-pre-line">
+          <div className="flex-1 w-full md:max-w-[457px]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-[26px] whitespace-pre-line">
               {heading}
             </h2>
 
@@ -38,30 +38,31 @@ export default function WhyChooseUsSection() {
             </Button>
           </div>
 
-          {/* Right — Mockup */}
-          <div className="flex-1 relative flex items-center justify-center max-w-[642px]">
+          {/* Right - Mockup */}
+          <div className="flex-1 relative flex items-center justify-center w-full md:max-w-[642px] mt-10 md:mt-0 h-[380px] sm:h-[420px] md:h-auto">
             {/* Pink blob */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[570px] h-[337px] bg-[#FAC4D2] rounded-[168.5px]" />
-            {/* choose1 — Listing card */}
-            <div className="absolute top-4 left-0 z-20 animate-float">
+            <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[200px] sm:w-[420px] sm:h-[260px] md:w-[570px] md:h-[337px] bg-[#FAC4D2] rounded-[168.5px]" />
+
+            {/* choose1 - Listing card */}
+            <div className="absolute top-0 -left-4 sm:top-6 sm:-left-6 md:top-10 md:-left-10 z-20 animate-float">
               <AppImage
                 src="/images/Why_Chosse/choose1.png"
                 alt="Listing card"
-                width={254}
-                height={105}
-                style={{ width: "254px", height: "105px" }}
+                width={310}
+                height={130}
+                style={{ width: "clamp(180px, 45vw, 310px)", height: "auto" }}
                 className="object-cover"
               />
             </div>
 
             {/* choose2 — Brand icons */}
-            <div className="absolute top-0 right-10 z-20 animate-float-delay">
+            <div className="absolute top-0 right-0 sm:top-2 sm:right-4 md:top-3 md:right-7 z-20 animate-float-delay">
               <AppImage
                 src="/images/Why_Chosse/choose2.png"
                 alt="Platforms"
-                width={200}
+                width={220}
                 height={184}
-                style={{ width: "200px", height: "184px" }}
+                style={{ width: "clamp(130px, 30vw, 220px)", height: "auto" }}
                 className="object-cover"
               />
             </div>
@@ -72,18 +73,21 @@ export default function WhyChooseUsSection() {
               alt="Property Manager"
               width={327}
               height={437}
-              style={{ width: "327px", height: "437px" }}
-              className="relative z-100 object-top"
+              style={{
+                width: "clamp(180px, 40vw, 327px)",
+                height: "auto",
+              }}
+              className="relative -top-2 -left-5 z-40 object-contain"
             />
 
             {/* choose3 — Calendar */}
-            <div className="absolute -bottom-10 left-0 z-20 animate-float-delay-2">
+            <div className="absolute -bottom-10 -left-4 sm:-bottom-12 sm:-left-10 md:-bottom-16 md:-left-17 z-20 animate-float-delay-2">
               <AppImage
                 src="/images/Why_Chosse/choose3.png"
                 alt="Calendar"
-                width={211}
-                height={170}
-                style={{ width: "211px", height: "170px" }}
+                width={280}
+                height={200}
+                style={{ width: "clamp(160px, 38vw, 280px)", height: "auto" }}
                 className="object-cover"
               />
             </div>
