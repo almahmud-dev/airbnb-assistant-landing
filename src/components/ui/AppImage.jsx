@@ -35,7 +35,7 @@ export default function AppImage({
       height={height ?? 600}
       className={className}
       priority={priority}
-      style={{ width: "auto", height: "auto", ...style }}
+      style={style}
       sizes={sizes}
       quality={quality}
     />

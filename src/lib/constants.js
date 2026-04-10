@@ -7,38 +7,16 @@ export const NAV_LINKS = [
   { label: "Resources", href: "#resources" },
 ];
 
+const DESC = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
 export const SERVICES = [
-  {
-    icon: "/images/Service/service1.png",
-    title: "Manage Property Listings",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    icon: "/images/Service/service2.png",
-    title: "Manage Customer Bookings",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    icon: "/images/Service/service3.png",
-    title: "Schedule House Cleaning",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    icon: "/images/Service/service4.png",
-    title: "Monitor Guest Reviews",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    icon: "/images/Service/service5.png",
-    title: "Track & Report Expenses",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    icon: "/images/Service/service6.png",
-    title: "Guest Inquiry & Support",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-];
+  { icon: "/images/Service/service1.png", title: "Manage Property Listings", iconWidth: 84, iconHeight: 84 },
+  { icon: "/images/Service/service2.png", title: "Manage Customer Bookings", iconWidth: 98, iconHeight: 97 },
+  { icon: "/images/Service/service3.png", title: "Schedule House Cleaning", iconWidth: 78, iconHeight: 78 },
+  { icon: "/images/Service/service4.png", title: "Monitor Guest Reviews", iconWidth: 91, iconHeight: 88 },
+  { icon: "/images/Service/service5.png", title: "Track & Report Expenses", iconWidth: 75, iconHeight: 89 },
+  { icon: "/images/Service/service6.png", title: "Guest Inquiry & Support", iconWidth: 74, iconHeight: 100 },
+].map(s => ({ ...s, description: DESC }));
 
 export const PRICING_PLANS = [
   {

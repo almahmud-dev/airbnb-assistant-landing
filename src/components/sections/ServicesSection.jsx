@@ -24,13 +24,12 @@ export default function ServicesSection() {
                 <AppImage
                   src={service.icon}
                   alt={service.title}
-                  width={64}
-                  height={64}
-                  style={{ height: "auto" }}
+                  width={service.iconWidth}
+                  height={service.iconHeight}
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-[24px] font-bold leading-[150%] text-[#000000] mb-3.5">{service.title}</h3>
+              <h3 className="text-[24px] font-bold leading-[150%] text-[#000000] mb-3.5 pr-5">{service.title}</h3>
               <p className="text-[#000000] text-sm font-medium mb-8.75">{service.description}</p>
               <Link
                 href="#"
