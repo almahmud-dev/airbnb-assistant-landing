@@ -29,14 +29,31 @@ export default function HowItWorksSection() {
                 </div>
 
                 {/* Icon */}
-                <AppImage
-                  src={step.icon}
-                  alt={step.label}
-                  width={100}
-                  height={100}
-                  style={{ height: "auto" }}
-                  className="object-contain"
-                />
+                <div className="relative">
+                  <AppImage
+                    src={step.icon}
+                    alt={step.label}
+                    width={step.mainIconWidth}
+                    height={step.mainIconHeight}
+                    className="object-contain"
+                  />
+                  {step.plusIcon && (
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                      <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21 8.01V11.49H12.18V21H8.82V11.49H0V8.01H8.82V0H12.18V8.01H21Z"
+                          fill="#ED3C6A"
+                        />
+                      </svg>
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Label — card */}

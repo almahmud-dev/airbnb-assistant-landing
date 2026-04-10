@@ -172,6 +172,9 @@ export const STEPS = [
     icon: "/images/Work/work1.png",
     iconWidth: 76,
     iconHeight: 76,
+    mainIconWidth: 72,
+    mainIconHeight: 58,
+    plusIcon: false,
   },
   {
     num: "02",
@@ -180,6 +183,9 @@ export const STEPS = [
     icon: "/images/Work/work2.png",
     iconWidth: 76,
     iconHeight: 76,
+    mainIconWidth: 108,
+    mainIconHeight: 123,
+    plusIcon: false,
   },
   {
     num: "03",
@@ -188,6 +194,9 @@ export const STEPS = [
     icon: "/images/Work/work3.png",
     iconWidth: 76,
     iconHeight: 76,
+    mainIconWidth: 70,
+    mainIconHeight: 58,
+    plusIcon: true,
   },
 ];
 
