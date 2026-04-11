@@ -1,0 +1,42 @@
+import AppImage from "./AppImage";
+
+function StarIcon() {
+  return (
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 11 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.66845 0.345362C4.81813 -0.115293 5.46983 -0.115294 5.61951 0.345361L6.49107 3.02773C6.558 3.23374 6.74998 3.37323 6.96659 3.37323H9.78701C10.2714 3.37323 10.4728 3.99303 10.0809 4.27773L7.79914 5.93553C7.62389 6.06285 7.55056 6.28854 7.6175 6.49455L8.48906 9.17692C8.63873 9.63758 8.11149 10.0206 7.71964 9.73594L5.43787 8.07814C5.26263 7.95082 5.02533 7.95082 4.85009 8.07814L2.56833 9.73594C2.17647 10.0206 1.64923 9.63758 1.79891 9.17692L2.67046 6.49455C2.7374 6.28854 2.66407 6.06285 2.48883 5.93553L0.207064 4.27773C-0.184793 3.99303 0.0165946 3.37323 0.500956 3.37323H3.32137C3.53798 3.37323 3.72996 3.23375 3.7969 3.02773L4.66845 0.345362Z"
+        fill="#FF9D00"
+      />
+    </svg>
+  );
+}
+
+export default function TestimonialCard({ name, image, text, highlight }) {
+  return (
+    <div className="flex items-center h-full gap-4 px-5">
+      <div className="relative shrink-0 w-[72px] h-[72px] rounded-full overflow-hidden">
+        <AppImage src={image} alt={name} fill className="object-cover" />
+      </div>
+
+      <div className="flex flex-col justify-center gap-2 flex-1 min-w-0">
+        <h3 className="text-[20px] font-bold text-black leading-[100%]">
+          {name}
+        </h3>
+        <p className="text-sm text-black leading-[100%] font-medium max-w-[321px]">
+          {text}
+        </p>
+        <div className="flex gap-1">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <StarIcon key={i} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

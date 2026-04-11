@@ -256,19 +256,33 @@ export const WHY_CHOOSE_US = {
 };
 
 // TestimonialsSection --------->
-export const REVIEWS = {
-  heading: "Check Our Clients",
-  highlight: "Review",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-  reviews: [
-    { id: 1, name: "Jenny Wilson",   image: "/images/Review/review1.png", rating: 4, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-    { id: 2, name: "Esther Howard",  image: "/images/Review/review2.png", rating: 4, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-    { id: 3, name: "Robert Fox",     image: "/images/Review/review3.png", rating: 4, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-    { id: 4, name: "Sarah Johnson",  image: "/images/Review/review1.png", rating: 5, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-    { id: 5, name: "Mark Davis",    image: "/images/Review/review2.png", rating: 4, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-  ],
-};
+export const TESTIMONIALS = [
+  {
+    name: "Jenny Wilson",
+    image: "/images/Review/review1.png",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    name: "Esther Howard",
+    image: "/images/Review/review2.png",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    name: "Robert Fox",
+    image: "/images/Review/review3.png",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    name: "Jenny Wilson",
+    image: "/images/Review/review1.png",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    name: "Esther Howard",
+    image: "/images/Review/review2.png",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
 
 // FAQSection --------->
 export const FAQS = [
