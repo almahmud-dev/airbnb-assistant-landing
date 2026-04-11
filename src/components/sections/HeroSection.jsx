@@ -10,7 +10,7 @@ import {
 export default function Hero() {
   return (
     <section
-      className="relative w-full overflow-hidden min-h-[400px]"
+      className="relative w-full overflow-hidden min-h-[500px]"
       style={{ aspectRatio: `${HERO_DESIGN_WIDTH} / ${HERO_DESIGN_HEIGHT}` }}
     >
       {/* hero.png — full background */}
@@ -43,7 +43,7 @@ export default function Hero() {
       ))}
 
       {/* Center zone */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center pt-[160px]">
+      <div className="absolute inset-0 z-10 flex items-center justify-center pt-16 md:pt-[160px]">
         {/* hero_mid.png — oval glow behind text */}
         <div
           className="absolute pointer-events-none w-[90%] max-w-[923px]"
