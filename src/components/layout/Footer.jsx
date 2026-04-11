@@ -12,11 +12,11 @@ export default function Footer() {
             <Image
               src="/images/Nav_logo/footer.png"
               alt="Logo"
-              width={120}
-              height={40}
+              width={106}
+              height={38}
               className="object-contain"
             />
-            <p className="text-[#606060] text-[13px] sm:text-[14px] leading-[22px] sm:leading-[24px]">
+            <p className="text-[#606060] text-[13px] sm:text-[14px] leading-5.5 sm:leading-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
               sodales in volutpat ullamcorper amet adipiscing fermentum.
@@ -26,7 +26,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href={href}
-                  className="text-[#101828] hover:text-[#ED3C6A] transition-colors"
+                  className="text-[#27272A] hover:text-[#ED3C6A] transition-colors"
                 >
                   <Icon size={20} />
                 </a>
@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="flex flex-1 flex-col sm:flex-row gap-8 sm:gap-6 lg:gap-10 xl:gap-16 justify-between">
             {Object.entries(FOOTER_LINKS).map(([title, links]) => (
               <div key={title}>
-                <h4 className="font-bold text-[#101828] text-[14px] sm:text-[15px] md:text-[16px] mb-4 sm:mb-5 md:mb-6">
+                <h4 className="font-bold text-[#18181B] text-[14px] sm:text-[15px] md:text-[16px] mb-4 sm:mb-5 md:mb-5.5">
                   {title}
                 </h4>
                 <ul className="flex flex-col gap-3 sm:gap-3.5 md:gap-4">
@@ -60,9 +60,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#1a1035]">
-        <div className="max-w-[1240px] mx-auto px-4 sm:px-6 py-4 sm:py-5 text-center">
-          <p className="text-white text-[12px] sm:text-[13px] md:text-[14px]">
+      <div className="bg-[#230B41]">
+        <div className="max-w-310 mx-auto px-4 sm:px-6 py-4 sm:py-5 text-center">
+          <p className="text-white text-[12px] sm:text-[13px] md:text-[14px] leading-5.5 font-normal font-poppins">
             © Copyright 2024, All Rights Reserved by XYz
           </p>
         </div>
