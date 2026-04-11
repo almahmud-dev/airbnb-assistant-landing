@@ -60,10 +60,10 @@ export default function Hero() {
 
         {/* Text & buttons */}
         <div className="relative z-10 flex flex-col items-center text-center px-4 w-full max-w-[923px]">
-          <h1 className="text-[32px] md:text-[36px] lg:text-[48px] font-bold text-black">
+          <h1 className="text-[28px] md:text-[36px] lg:text-[48px] font-bold text-black">
             Airbnb Assistants For
             <br />
-            <span className="font-medium text-[24px] md:text-[32px] lg:text-[38px]">
+            <span className="font-medium text-[22px] md:text-[32px] lg:text-[38px]">
               Property Management
             </span>
           </h1>
