@@ -4,8 +4,8 @@ import { TOOLS } from "@/lib/constants";
 
 export default function ToolsSection() {
   return (
-    <section id="tools" className="pt-21 bg-white">
-      <div className="max-w-240 mx-auto pb-20.5 px-6">
+    <section id="tools" className="pt-10 lg:pt-21 bg-white">
+      <div className="max-w-240 mx-auto pb-5 lg:pb-20.5 px-6">
         <SectionHeader
           title="Our"
           highlight="Tools"
@@ -20,7 +20,7 @@ export default function ToolsSection() {
             {TOOLS.map((tool) => (
               <div
                 key={tool.name}
-                className="bg-white rounded-[11px] flex items-center justify-center py-11.75 pl-11 pr-17.5 shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="bg-white rounded-[11px] flex items-center justify-center p-6 md:py-11.75 md:pl-11 md:pr-17.5 shadow-sm hover:shadow-md transition-shadow duration-200 aspect-[3/2]"
               >
                 <AppImage
                   src={tool.src}
