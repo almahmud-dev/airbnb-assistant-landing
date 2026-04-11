@@ -317,19 +317,18 @@ export const FAQS = [
       "You can change your account email from your profile settings page. A verification email will be sent to confirm.",
   },
 ];
+// Footer --------->
+import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 export const FOOTER_LINKS = {
   Company: ["About", "Features", "Works", "Career"],
-  Help: [
-    "Customer Support",
-    "Delivery Details",
-    "Terms & Conditions",
-    "Privacy Policy",
-  ],
-  Resources: [
-    "Free eBooks",
-    "Development Tutorial",
-    "How to – Blog",
-    "Youtube Playlist",
-  ],
+  Help: ["Customer Support", "Delivery Details", "Terms & Conditions", "Privacy Policy"],
+  Resources: ["Free eBooks", "Development Tutorial", "How to - Blog", "Youtube Playlist"],
 };
+
+export const SOCIAL_ICONS = [
+  { icon: FaTwitter, href: "#" },
+  { icon: FaLinkedin, href: "#" },
+  { icon: FaInstagram, href: "#" },
+  { icon: FaGithub, href: "#" },
+];
